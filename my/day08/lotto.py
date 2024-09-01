@@ -1,9 +1,9 @@
 import random as rnd
 
-lotto = ""
-lotto_num = []
-compare =[]
-rnd_no=0
+lotto :str  = ""
+lotto_num   = []
+compare     = []
+rnd_no :int = 0
 
 for i in range(0,45):
     lotto_num.append(i+1)
@@ -17,15 +17,13 @@ for i in range(0,6):
         if (compare[j] == rnd_no):
             i = i-1
             break
-        # end of if() -----------
     # end of for () -------------
     
     if (i<5):
         compare.append(rnd_no)
-        add =","
+        add = ","
     else:
-        add = ""
-    # end of if () ---------------    
+        add = ""    
     lotto += str(lotto_num[rnd_no]) + add
 # end of for () -------------
 
