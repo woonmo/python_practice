@@ -27,4 +27,4 @@ for i in range(0,6):
     lotto += str(lotto_num[rnd_no]) + add
 # end of for () -------------
 
-print("로또 당첨 번호 : ",  lotto)
+print("로또 당첨 번호 :",  lotto)
